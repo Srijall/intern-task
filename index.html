@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet"  href="style.css">
+  <title>News HomePage</title>  
+</head>
+<body>
+  <div class="main">
+
+    <header class="header">
+      <nav class="navbar">
+        <div class="icon">
+          <h1>W.</h1>
+        </div>
+          <img src="/assets/images/icon-menu.svg" alt="" onclick="menuOpen()">
+        <ul class="menu">  
+          <img src="/assets/images/icon-menu-close.svg" alt="" onclick="menuClose()">
+          <div class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </div>
+        </ul>      
+        <ul class="menu mobile">  
+          <img src="/assets/images/icon-menu-close.svg" alt="" onclick="menuClose()">
+          <div class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </div>
+        </ul>      
+    </nav>
+    </header>
+    <div class="main-content">
+      <div  class="highlights">
+        <div class="main-highlight">
+          <img src="/assets/images/image-web-3-desktop.jpg" alt="block" class="pc-photo">
+          <img src="/assets/images/image-web-3-mobile.jpg" alt="" class="mobile-photo">
+          <div class="featured">
+            <div class="featured-blog">
+              <h1>
+                The Bright Future of Web 3.0?
+              </h1>
+            </div>
+            <div class="blog-content">
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?</p>
+              <button>Read more</button>
+            </div>
+          </div>
+        </div> 
+        <div class="sidebar">
+          <h1>New</h1>
+          <div class="blog">
+            <h2>
+              Hydrogen VS Electric Cars
+            </h2> 
+            <p>
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <hr>
+          <div class="blog">
+            <h2>
+              Downsides of AI Artistry
+            </h2> 
+            <p>
+              What are the possible adverse effects of on-demand AI image generation?
+            </p>
+          </div>   
+          <hr>
+          <div class="blog">
+            <h2>
+              VC Funding Drying Up?
+            </h2>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at what that means.
+            </p>
+          </div>
+        </div>
+      
+      </div>
+      <div class="article-gc">
+        <div class="article">
+           <img src="/assets/images/image-retro-pcs.jpg" alt="computer">
+          <div class="article-content"> 
+            <h1>01</h1>
+            <h2>Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        
+        <div class="article">
+          <img src="/assets/images/image-top-laptops.jpg" alt="keyboard">
+         <div class="article-content">
+
+           <h1>02</h1>
+           <h2> 10 Laptops of 2022</h2>
+           <p> best picks for various needs and budgets.</p>
+          </div>
+          </div>
+        <div class="article">
+          <img src="/assets/images/image-gaming-growth.jpg" alt="gaming">
+          <div class="article-content">
+          <h1>03</h1>
+          <h2>The Growth of Gaming</h2>
+          <p> he pandemic has sparked fresh opportunities.</p>
+            </div>
+        </div>
+        
+
+      </div>
+    </div>
+    </div>
+    
+
+    </div>
+
+</div>
+</body>
+<script>
+  // let menuOpen=document.getElementsByClassName('menu-open');
+function menuOpen(){
+  document.getElementsByClassName('mobile')[0].style.display='flex';
+}
+function menuClose(){
+  document.getElementsByClassName('mobile')[0].style.display='none';
+}
+
+</script>
+</html>

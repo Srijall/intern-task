@@ -1,0 +1,251 @@
+
+*{
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+}
+.main{
+   background-color: rgb(255, 255, 255);
+   height: 100vh;
+    padding: 0 150px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.header{
+    padding-top: 10px;
+}
+.icon h1{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap:40px;
+    justify-content: center;
+}
+
+.menu img{
+    display: none;
+}
+.menu-items{
+    display: flex;
+    gap:40px;
+    justify-content: center;
+}
+.menu-items li{
+    list-style-type: none;
+}
+.menu-items li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.menu-items li a:hover{
+    color: orange;
+}
+/* .photo{
+    padding: 30px;  
+}
+.photo img{
+    max-width:700px;
+    width: 70vw;
+} */
+.main-highlight{
+    width: 70%;
+}
+.main-highlight img{
+    width: 100%;
+    
+}
+.sidebar .blog {
+    display: flex;
+    flex-direction: column;
+    gap:10px; 
+}
+.highlights{
+    gap: 40px;
+    width: auto;
+    display: flex;
+}
+.sidebar h1:hover{
+    color:orange
+}
+.sidebar{
+    padding: 20px;
+    background-color: black;
+    /* height: 100%; */
+    color: white;
+    width: 29%;
+}
+.sidebar .blog{
+    padding: 40px 0;
+}
+.blog h2{
+    font-size: 20px;
+}
+.blog p{
+    font-size: 15px;
+}
+.featured{
+    display: flex;
+    gap: 150px;
+    margin-top: 50px;
+    width: 100%;
+}
+.featured-blog{
+    /* width: 600px; */
+    font-weight: bolder;
+    font-size: 20px;
+}    
+.featured-blog h1{
+    width: 220px;
+    font-size: 40px;
+    font-weight: 800;
+}
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.blog-content button{
+    background-color: #E83E2D;
+    border: none;
+        color: white;
+        width: 40%;
+        padding: 15px 40px;
+    }
+    .blog-content button:hover{
+        background-color: orange;
+        
+    }
+    .article-gc{
+        display: flex;
+        gap: 120px;
+        margin-bottom: 40px;
+        
+        
+    }
+    .article{
+        display: flex;
+        /* width: 45%; */
+        margin-top: 40px;
+        gap: 15px;
+    }
+    .article img{
+        width: 100px;
+        height: 125px;
+    }
+    .article-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .article h2{
+        font-size: medium;
+    }
+    .mobile-photo{
+        display: none;
+    }
+    .navbar  img{
+        display: none;
+    }
+    /* For MOBILE DESIGN */
+    
+    .mobile{
+        display: none;
+    }
+
+
+
+    
+@media only screen and (max-width: 400px) {
+        .navbar  img{
+            display: block;
+            width: 35px;
+            height: 30px;
+            /* margin-right: 10px; */
+        }
+        .menu{
+            display: none;
+            height: 100%;
+            flex-direction: column;
+            right: 0;
+            top: 0;
+            left: 110px;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding-top: 30px;
+            padding-right: 30px;
+            padding-left: 40px;
+            z-index: 1;
+            position: fixed;
+            background-color: rgb(255, 255, 255);
+            gap:100px;
+        }
+        .menu img{
+            display: block;
+        }
+        .menu-items{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .main{
+            padding: 10px   ;
+        }
+        .highlights{
+            flex-direction: column;
+        }
+        /* .blog-content {
+            flex-direction: column;
+        } */
+        .featured{
+            flex-direction: column;
+            gap:10px;
+            margin-top: 20px;
+        }
+        .main-highlight {
+        width: 100%;
+        }
+        .main-highlight img{
+            width: 100%;
+        }
+        .featured h1{
+            width: 100%;
+            font-weight: 900;
+            font-size:45px;
+            line-height: 50px;
+        
+            }
+            .mobile-photo{
+                display: block;
+            }
+            .pc-photo{
+                display: none;
+            }
+            .blog-content button:hover{
+                background-color: orange;
+            
+            }
+            .sidebar{
+                width: auto;
+                }
+        .article-gc{
+            flex-direction: column;
+            gap: 5px;
+        }
+        .article{
+            width: auto;
+        }
+    }
